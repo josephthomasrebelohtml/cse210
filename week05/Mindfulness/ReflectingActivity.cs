@@ -32,7 +32,7 @@ public class ReflectingActivity : Activity
         while (DateTime.Now < endTime)
         {
             DisplayQuestions();
-            ShowSpinner(4);
+            ShowSpinner(5);
         }
         DisplayEndingMessage();
     }

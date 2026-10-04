@@ -27,7 +27,6 @@ class Program
             {
                 breathingActivity.Run();
             }
-
             else if (userChoice == "2")
             {
                 reflectingActivity.Run();
@@ -37,10 +36,6 @@ class Program
             {
                 listingActivity.Run();
             }
-            else if (userChoice == "4")
-            {
-            }
-
             else
             {
             }
