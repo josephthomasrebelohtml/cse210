@@ -40,6 +40,7 @@ class Program
                     string userEntry = Console.ReadLine();
                     entry._entryText = userEntry;
                     journal.AddEntry(entry);
+                    Console.WriteLine(journal);
 
 
 
