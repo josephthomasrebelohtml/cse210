@@ -13,11 +13,6 @@ public abstract class Goal
         _points = points;
     }
 
-    //TEMPORARY CONSTRUCTOR
-    public Goal()
-    {
-    }
-
     public abstract void RecordEvent();
 
     public abstract bool IsComplete();
