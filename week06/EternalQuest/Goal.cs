@@ -2,8 +2,8 @@ using System;
 
 public abstract class Goal
 {
-    private string _shortName = "";
-    private string _description = "";
+    protected string _shortName = "";
+    protected string _description = "";
     protected int _points = 0;
 
     public Goal(string name, string description, int points)
