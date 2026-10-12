@@ -6,6 +6,7 @@ public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
     private int _score;
+    private int _level = 1;
 
     public void Start()
     {
@@ -54,9 +55,23 @@ public class GoalManager
 
     private void DisplayPlayerInfo()
     {
+        DetermineLevel();
         Console.WriteLine("");
         Console.WriteLine($"You have {_score} points.");
+        Console.WriteLine($"You are Level {_level}!");
         Console.WriteLine("");
+    }
+    private void DetermineLevel()
+    {
+        int percentageMultiplier = _level;
+        double pointsTarget = 500 * (1.10 * (percentageMultiplier));
+        while (_score >= pointsTarget)
+        {
+            _level++;
+            percentageMultiplier = _level;
+            pointsTarget = 500 * (1.10 * (percentageMultiplier));
+        }
+
     }
 
     private void ListGoalNames()
